@@ -1,0 +1,134 @@
+.singlepost{
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+
+    img{
+        height: 300px;
+        width: 90%;
+        object-fit: cover;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        margin-top: 12px;
+    }
+
+    .title__container{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-between;
+        align-items: center;
+        .title__center{
+            font-family: 'Lora', serif;
+            font-size: 35px;
+            font-weight: 700;
+            color: #444444;
+        }
+        input{
+            width: 100%;
+            font-size: 35px;
+            font-family: 'Lora', serif;
+            font-weight: 700;
+            color: #444444;
+            border: none;
+            text-align: center;
+        }
+        input:focus{
+            outline: none;
+            border-bottom: 1px solid #666666;
+            color: #444444;
+        }
+        .title__right{
+            .icon{
+                font-size: 25px;
+                margin: 5px;
+                border-radius: 5px;
+                padding: 2px;
+                cursor: pointer;
+
+                &.editIcon{
+                    color: rgb(21, 185, 21);
+                    background-color: rgba(21, 185, 21, 0.31);
+                }
+                &.deleteIcon{
+                    color: rgb(247, 55, 55);
+                    background-color: rgba(247, 55, 55, 0.288);
+                }
+            }
+        }
+    }
+
+    .post__detail{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        margin: 20px 0 40px;
+        color: #ad955a;
+        font-size: 18px;
+        font-family: 'Josefin Sans', sans-serif;
+        .author__name{
+            font-weight: 600;
+        }
+    }
+
+    .post__content{
+        width: 90%;
+        //font-family: 'Varela Round', sans-serif;
+        line-height: 1.6;
+        font-size: 20px;
+        color: #666666;
+        font-weight: 500;
+    }
+
+    textarea{
+        width: 90%;
+        border: none;
+        font-size: 20px;
+        color: #666666;
+        font-weight: 500;
+        font-family: 'Varela Round', sans-serif;
+    }
+    textarea:focus{
+        outline: none;
+        border-bottom: 1px solid #444444;
+    }
+
+    .post__content::first-letter{
+        font-weight: 800;
+        font-size: 30px;
+        margin-left: 20px;
+    }
+
+    .button__container{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+
+        .cancel__button{
+            background-color: #e13b3b;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 20px;
+            border: none;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Varela';
+            cursor: pointer;
+        }   
+
+        .update__button{
+            background-color: #ad8112;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 20px;
+            border: none;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Varela';
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.header{
+    position: relative;
+    font-family: 'Lora', serif;
+    color: #3c3939;
+
+    .header__text{
+        position: absolute;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        top: 40px;
+        .header__subtext{
+            font-size: 30px;
+        }
+        .header__maintext{
+            font-size: 150px;
+            font-weight: 400;
+        }
+    }
+
+    img{
+        width: 100%;
+        height: 90vh;
+        object-fit: cover;
+    }
+}
